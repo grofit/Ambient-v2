@@ -1,0 +1,46 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="MainContainerStyle" TargetType="StackPanel">
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+    
+    <Style x:Key="PlayerBorderStyle" TargetType="Border">
+        <Setter Property="BorderBrush" Value="Silver"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Padding" Value="5"/>
+    </Style>
+
+    <Style x:Key="NameLabelStyle" TargetType="Label">
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
+    <Style x:Key="NameTextStyle" TargetType="TextBox">
+        <Setter Property="Width" Value="Auto"/>
+    </Style>
+
+    <Style x:Key="PlayProgressBarStyle" TargetType="ProgressBar">
+        <Setter Property="Height" Value="20"/>
+    </Style>
+    
+    <Style x:Key="LoadButtonImageStyle" TargetType="Image">
+        <Setter Property="Source" Value="images/music--plus.png"/>
+    </Style>
+
+    <Style x:Key="PlayButtonImageStyle" TargetType="Image">
+        <Setter Property="Source" Value="images/control.png"/>
+    </Style>
+
+    <Style x:Key="PauseButtonImageStyle" TargetType="Image">
+        <Setter Property="Source" Value="images/control-pause.png"/>
+    </Style>
+
+    <Style x:Key="StopButtonImageStyle" TargetType="Image">
+        <Setter Property="Source" Value="images/control-stop-square.png"/>
+    </Style>
+
+    <Style x:Key="RepeatButtonImageStyle" TargetType="Image">
+        <Setter Property="Source" Value="images/arrow-repeat.png"/>
+    </Style>
+
+</ResourceDictionary>

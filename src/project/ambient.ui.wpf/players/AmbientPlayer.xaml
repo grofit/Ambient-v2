@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="ambient.ui.wpf.players.AmbientPlayer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="250" d:DesignWidth="250">
+    <Border Name="PlayerBorder" Width="auto" Style="{DynamicResource PlayerBorderStyle}">
+        <StackPanel Name="ContentContainer">
+        
+            <StackPanel Name="FileDetailsContainer" Orientation="Horizontal">
+                <Label Name="NameLabel" Style="{DynamicResource NameLabelStyle}">Name</Label>
+                <TextBox Name="NameText" Style="{DynamicResource NameTextStyle}">- Enter Name Here -</TextBox>
+            </StackPanel>
+            
+            <StackPanel Name="SoundControlsContainer" Orientation="Vertical">
+                <ProgressBar Name="PlayProgressBar" Style="{DynamicResource PlayProgressBarStyle}"></ProgressBar>
+                <Label Name="VolumeLabel">Volume</Label>
+                <Slider Name="VolumeSlider"></Slider>
+                <Label Name="PanLabel">Pan</Label>
+                <Slider Name="PanSlider"></Slider>
+            </StackPanel>
+            
+            <ToolBar Name="PlayerControlsContainer" >
+                <Button Name="LoadButton">
+                    <Image Style="{DynamicResource LoadButtonImageStyle}"></Image>
+                </Button>
+                <Separator></Separator>
+                <Button Name="PlayButton">
+                    <Image Style="{DynamicResource PlayButtonImageStyle}"></Image>
+                </Button>
+                <Button Name="PauseButton">
+                    <Image Style="{DynamicResource PauseButtonImageStyle}"></Image>
+                </Button>
+                <Button Name="StopButton">
+                    <Image Style="{DynamicResource StopButtonImageStyle}"></Image>
+                </Button>
+                <Separator></Separator>
+                <ToggleButton Name="RepeatButton">
+                    <Image Style="{DynamicResource RepeatButtonImageStyle}"></Image>
+                </ToggleButton>
+            </ToolBar>
+            
+        </StackPanel>
+    </Border>
+</UserControl>
